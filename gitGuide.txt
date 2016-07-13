@@ -1,0 +1,44 @@
+
+The test repository is https://github.com/AMPRPA/master.git
+
+
+============
+run git-bash
+============
+
+Open git-bash command windows
+-----------------------------
+
+git config --global http.proxy http://csamon:csamon@proxy.amp.network:8080
+git config --global https.proxy http://csamon:csamon@proxy.amp.network:8080
+
+Change to your local working directory
+example c:\temp\gitrepos and execute the git command line as below.
+This will clone the git hub repos to your local repos
+
+git clone https://github.com/AMPRPA/master.git
+
+
+However, if you see in the error message something like SSL.... is missing
+Then start over again as below:
+
+git config --global http.sslVerify false
+git config --global http.proxy http://csamon:csamon@proxy.amp.network:8080
+git config --global https.proxy http://csamon:csamon@proxy.amp.network:8080
+
+Change to your local working directory
+example c:\temp\gitrepos
+
+git clone https://github.com/AMPRPA/master.git
+
+
+If all work, then verify that there should a downloaded files it into your working directory
+e.g.c:\temp\gitrepos
+
+--------------------------- the above is to ensure that is working --------------------
+
+Get on to the Jenkins - see example on http://amprpacrd01/job/RPA%20TEST%20-%20Term%20Deposit%202%20gary/
+
+Clone from the above Jenkins job
+
+
